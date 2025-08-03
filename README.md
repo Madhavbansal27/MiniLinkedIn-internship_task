@@ -4,7 +4,7 @@ This is a full-stack web application that allows users to sign up, log in, and s
 
 ---
 
-## 🚀 Features
+## Features
 
 - **Login/Signup authentication**
   - Passwords are hashed securely
@@ -17,39 +17,42 @@ This is a full-stack web application that allows users to sign up, log in, and s
 - **Other user profiles**:
   - Click on any post to see author's profile and posts
 
+##  Extra Feature
+
+- Can edit your name and bio in profile section
 ---
 
 ## 🛠️ Getting Started
 
 1. **Clone the repo**:
    
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
+-git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
 2. **Install Dependencies**
-    cd backend
-    npm install
-    npm start
+cd backend
+npm install
+npm start
 
-    cd ../frontend
-    npm install
-    npm run dev
+cd ../frontend
+npm install
+npm run dev
 
 ## 🛠️ TECH STACK
 Frontend:
-    React
-    TypeScript
-    Tailwind CSS
-    Axios
+React
+TypeScript
+Tailwind CSS
+Axios
 
 Backend:
-    Node.js
-    Express.js
-    MongoDB
-    TypeScript
-    Mongoose
-    bcrypt (for password hashing)
-    jsonwebtoken (for JWT authentication)
+Node.js
+Express.js
+MongoDB
+TypeScript
+Mongoose
+bcrypt (for password hashing)
+jsonwebtoken (for JWT authentication)
 
 Tools:
-    Git
-    VS Code
+Git
+VS Code
