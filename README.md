@@ -24,10 +24,12 @@ This is a full-stack web application that allows users to sign up, log in, and s
 
 ## 🛠️ Getting Started
 
-1. **Clone the repo**:
-   
--git clone https://github.com/your-username/your-repo-name.git
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
+
 2. **Install Dependencies**
 cd backend
 npm install
@@ -36,23 +38,24 @@ npm start
 cd ../frontend
 npm install
 npm run dev
+```
+# Tech Stack
 
-## 🛠️ TECH STACK
-Frontend:
-React
-TypeScript
-Tailwind CSS
-Axios
+## Frontend:
+- React  
+- TypeScript  
+- Tailwind CSS  
+- Axios  
 
-Backend:
-Node.js
-Express.js
-MongoDB
-TypeScript
-Mongoose
-bcrypt (for password hashing)
-jsonwebtoken (for JWT authentication)
+## Backend:
+- Node.js  
+- Express.js  
+- MongoDB  
+- TypeScript  
+- Mongoose  
+- bcrypt (for password hashing)  
+- jsonwebtoken (for JWT authentication)  
 
-Tools:
-Git
-VS Code
+## Tools:
+- Git  
+- VS Code  
