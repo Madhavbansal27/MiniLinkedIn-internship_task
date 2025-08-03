@@ -1,5 +1,11 @@
 import mongoose from "mongoose"
-mongoose.connect("mongodb+srv://Madhav:y2PuU4wGCqgEoT95@cluster0.axze3.mongodb.net/Ciaan-task")
+import dotenv from "dotenv"
+dotenv.config()
+const MONGO_URL = process.env.MONGO_URL
+if(!MONGO_URL){
+    throw new Error("MONGO_URL not set in environment variables")
+}
+mongoose.connect(MONGO_URL)
 
 const userSchema = new mongoose.Schema({
     name : {
