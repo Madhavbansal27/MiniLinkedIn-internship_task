@@ -15,7 +15,7 @@ const PostCreator: React.FC<PostCreatorProps> =({ setPosts }) => {
     e.preventDefault();
     
     if (!content.trim() || !user) return;
-    const response = await axios.post("http://localhost:3000/api/post/newpost",{
+    const response = await axios.post("https://minilinkedin-internship-task.onrender.com/api/post/newpost",{
       content
     },{
       headers:{

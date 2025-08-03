@@ -29,7 +29,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
 
   const login = async (email: string, password: string): Promise<boolean> => {
     try {
-      const res = await axios.post('http://localhost:3000/api/user/signin', {
+      const res = await axios.post('https://minilinkedin-internship-task.onrender.com/api/user/signin', {
         email,
         password
       });
@@ -46,7 +46,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
 
   const signup = async (email: string, password: string): Promise<boolean> => {
     try {
-      const res = await axios.post('http://localhost:3000/api/user/signup', {
+      const res = await axios.post('https://minilinkedin-internship-task.onrender.com/api/user/signup', {
         email,
         password,
       });
@@ -73,7 +73,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
       if (!token || !user) return false;
 
       const res = await axios.put(
-        `http://localhost:3000/api/user/profile-setup`,
+        `https://minilinkedin-internship-task.onrender.com/api/user/profile-setup`,
         { name, bio },
         {
           headers: {

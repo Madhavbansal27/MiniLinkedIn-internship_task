@@ -24,7 +24,7 @@ const ProfilePage: React.FC = () => {
       setProfileUser(currentUser);
     } else if (userId) {
       async function getUserProfile(userId:string){
-        const response = await axios.get(`http://localhost:3000/api/user/getProfile/${userId}`,{
+        const response = await axios.get(`https://minilinkedin-internship-task.onrender.com/api/user/getProfile/${userId}`,{
           headers : {
             Authorization : "Bearer " + localStorage.getItem("token") 
           }
@@ -38,7 +38,7 @@ const ProfilePage: React.FC = () => {
   useEffect(() => {
     const fetchUserPosts = async (targetUserId: string) => {
       try {
-        const response = await axios.get(`http://localhost:3000/api/post/get-user-posts/${targetUserId}`, {
+        const response = await axios.get(`https://minilinkedin-internship-task.onrender.com/api/post/get-user-posts/${targetUserId}`, {
           headers: {
             Authorization: "Bearer " + localStorage.getItem("token"),
           },

@@ -10,7 +10,7 @@ const HomePage: React.FC = () => {
   useEffect(() => {
     async function fetchPosts(){
       try {
-        const response = await axios.get("http://localhost:3000/api/post/get-all-posts",{
+        const response = await axios.get("https://minilinkedin-internship-task.onrender.com/api/post/get-all-posts",{
           headers : {
               Authorization :"Bearer " + localStorage.getItem("token")
           }
